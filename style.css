@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(82deg, rgba(2, 0, 36, 1) 0%, rgba(8, 179, 160, 0.700717787114846) 0%, rgba(0, 112, 255, 0.969625350140056) 86%), url(img/RoyalATK.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  min-height: 1200px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#logo {
+  display: flex;
+  text-align: center;
+  padding: 0;
+  margin-top: 30px;
+}
+
+#logoroyal img {
+  flex: 30%;
+  max-width: 35%;
+}
+
+#alert {
+  max-width: 600px;
+  background-color: rgba(0, 217, 255, 0.747);
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  text-align: center;
+}
+form {
+  max-width: 600px;
+  background-color: rgba(0, 38, 255, 0.747);
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+label,
+input select {
+  display: block;
+}
+select {
+  display: block;
+}
+label {
+  margin-bottom: 25px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+  font-family: inherit;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(43, 226, 141);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+
+#submit {
+  color: rgb(4, 0, 255);
+}
+
+#btn {
+  color: rgb(4, 0, 255);
+}
