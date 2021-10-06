@@ -15,24 +15,29 @@
 
     <title>Form Order Marketing</title>
   </head>
+
+  <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert" id="alert">
+    Pesanan sudah diterima <br />
+    <strong>Lanjutkan Gengs!!</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
   <body>
-    <div id="logo">
-      <div id="logoroyal"><img src="img/Logoratk.png" alt="logo_royal" /></div>
+    <div id="logo" class="logo">
+      <div id="logoroyal"><img src="img/logo-royal.png" alt="logo_royal" class="img-fluid" /></div>
     </div>
 
-    <h1 id="title"><strong>Form Order Marketing</strong></h1>
-    <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert" id="alert">
-      Pesanan sudah diterima <br />
-      <strong>Lanjutkan Gengs!!</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
     <form name="Form-Order-Marketing">
+      <h1 id="title"><strong>Form Order Marketing</strong></h1>
+
       <label for="name" id="name-label">
         Pemesan
         <select id="nama" name="nama">
           <option value="Angger">Angger</option>
           <option value="Luky">Luky</option>
           <option value="Rizal">Rizal</option>
+          <option value="Bagus">Bagus</option>
+          <option value="Steven">Steven</option>
         </select>
       </label>
 

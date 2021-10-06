@@ -11,7 +11,8 @@ body::before {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(82deg, rgba(2, 0, 36, 1) 0%, rgba(8, 179, 160, 0.700717787114846) 0%, rgba(0, 112, 255, 0.969625350140056) 86%), url(img/RoyalATK.jpg);
+  background-image: linear-gradient(82deg, rgba(255, 255, 255, 0.3) 31%, rgba(255, 255, 255, 0.411) 86%), url(img/RoyalATK.jpg);
+  background-position: center bottom;
   background-size: cover;
   z-index: -1;
 }
@@ -23,26 +24,47 @@ body {
 
 h1 {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-#logo {
+.logo {
   display: flex;
-  text-align: center;
-  padding: 0;
+  justify-content: center;
+}
+#logoroyal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30%;
+  margin-bottom: -5%;
   margin-top: 30px;
 }
 
-#logoroyal img {
-  flex: 30%;
-  max-width: 35%;
+@media only screen and (max-width: 700px) {
+  #logoroyal img {
+    max-width: 30%;
+    margin-bottom: -5%;
+  }
 }
 
+@media only screen and (max-width: 500px) {
+  #logoroyal img {
+    max-width: 45%;
+    margin-bottom: -15%;
+  }
+
+  body::before {
+    background-image: linear-gradient(82deg, rgba(255, 255, 255, 0.3) 31%, rgba(255, 255, 255, 0.411) 86%), url(img/RoyalATK2.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    z-index: -1;
+  }
+}
 #alert {
   max-width: 600px;
-  background-color: rgba(0, 217, 255, 0.747);
+  background-color: rgba(17, 52, 58, 0.747);
   margin: 0 auto;
   padding: 20px 40px;
   color: rgb(255, 255, 255);
@@ -51,10 +73,10 @@ h1 {
 }
 form {
   max-width: 600px;
-  background-color: rgba(0, 38, 255, 0.747);
+  background-color: rgba(253, 253, 253, 0.733);
   margin: 0 auto;
-  padding: 20px 40px;
-  color: rgb(255, 255, 255);
+  padding: 50px 40px;
+  color: rgb(0, 0, 0);
   border-radius: 5px;
 }
 
@@ -80,6 +102,8 @@ textarea {
   border: 0;
   padding: 10px;
   font-family: inherit;
+  background-color: #a1a1a1;
+  color: white;
 }
 
 textarea {
